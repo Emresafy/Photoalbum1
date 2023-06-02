@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Instrument Serif', serif;
+    font-size: 15px;
+}
+
+nav{
+    border-bottom: 2px solid;
+    background-color: darkgray;
+}
+
+.navItems{
+    /* border: 2px solid; */
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 6vh;
+    /* background-color: rgba(169, 169, 169, 0.781); */
+}
+.navItems p:hover{
+    color: #7a64d5;
+    cursor: pointer;
+}
+
+/* .navItems i{
+    background-color: #fff;
+    width:5%;
+    color: black;
+    font-size: 2rem;
+} */
+
+.navItems p{
+    margin-top: 10px;
+    margin-left: -1rem;
+    font-weight: 900;
+    font-size: large;
+    color: #fff;
+    font-family: 'Bilbo Swash Caps', cursive;
+}
+
+main{
+    border: 2px solid;
+    width: 100%;
+    height: 125vh;
+    /* margin: auto;
+    max-width: 1200px;
+    margin-top: 2rem; */
+    background-image: url(https://images.unsplash.com/photo-1580820267682-426da823b514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXQlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww&w=1000&q=80);
+
+}
+
+.h1{
+    border-bottom: 2px solid white;
+    margin:auto 20rem;
+    max-width: 800px;
+    margin-top: 2rem;
+    width: 35%;
+    display: flex;
+    border-radius: 1rem;
+    color:#fff;
+}
+
+.h1 input{
+    width: 30rem;
+}
+.h1 i{
+    margin-top: 7px;
+    cursor: pointer;
+    margin-left: -2rem;
+    font-size: 2rem;
+}
+.h1 input[type=search]{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+input[type=search]::placeholder{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+.flip-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin-top: 2rem;
+    border: 1px solid #fff;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .box:hover .box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .box-back h2{
+    margin-top: 1rem;
+  }
+
+  .foot{
+    border-top: 2px solid black;
+    height: 16px;
+    background-color: darkgray;
+  }
+
+  .foot h3{
+    margin-left: 40rem;
+    cursor: pointer;
+    color: #fff;
+  }
